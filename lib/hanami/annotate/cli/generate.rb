@@ -10,7 +10,7 @@ module Hanami
       #
       # @todo add support for mysql and sqlite3 etc..
       #
-      class Generate < Hanami::CLI::Command
+      class Generate < Hanami::CLI::Commands
         def call(*)
           postgres
           @table_names.each do |table_name|
